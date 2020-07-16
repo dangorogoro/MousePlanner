@@ -1,0 +1,3 @@
+[submodule "MazeParsue"]
+	path = MazeParsue
+	url = https://github.com/dangorogoro/MazeParsue/
