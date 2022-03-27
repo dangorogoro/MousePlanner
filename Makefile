@@ -2,9 +2,10 @@ PROJECT_NAME := test
 CXX := g++
 LD := g++
 INCLUDE := \
-	-Ilib
+	-Ilib \
+	-IMazeParsue/lib
 OUTPUT_DIR := build
-CPP_SRCS := $(wildcard main.cpp lib/*.cpp)
+CPP_SRCS := $(wildcard main.cpp lib/*.cpp MazeParsue/lib/*.cpp)
 CXX_FLAGS := -O1 -g -std=c++17 -Wall -Wformat
 
 OBJS := $(patsubst %,$(OUTPUT_DIR)/%, $(CPP_SRCS:.cpp=.o))
